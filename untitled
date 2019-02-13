@@ -1,0 +1,36 @@
+$str='
+				<span class="bigimg">
+						<img src="'.$bigimgdata["gmeta_data"]["content_img"] .'">
+				 </span>
+				 <div class="sliderDescription">
+					<div class="studentName"> '.$bigimgdata["gmeta_data"]["student_render"] .'</div>
+					<div class="school"> '. $bigimgdata["gmeta_data"]["school_render"] .'</div>
+					<div class="description"> '.$description.'</div>
+					<div class="rating">
+					<div class="content_rating"> '. wp_star_rating($rating) .' </div> |
+		 	        <div class="rate_it_now">yourRating : '. wp_star_rating($rate_it_now) .' </div> 
+		 	        </div>
+				 </div>
+	';
+	return $str;
+
+
+
+
+
+
+
+
+
+	<span class="bigimg">
+						<img src="<?php echo $bigimgdata["gmeta_data"]["content_img"]; ?>">
+				 </span>
+				 <div class="sliderDescription">
+					<div class="studentName"> <?php echo $bigimgdata["gmeta_data"]["student_render"] ;  ?></div>
+					<div class="school"> <?php echo $bigimgdata["gmeta_data"]["school_render"] ;  ?></div>
+					<div class="description"> <?php echo $description;  ?></div>
+					<div class="rating">
+					<div class="content_rating"> <?php wp_star_rating($rating); ?> </div> |
+		 	        <div class="rate_it_now">yourRating : <?php wp_star_rating($rate_it_now); ?> </div> 
+		 	        </div>
+				 </div>
